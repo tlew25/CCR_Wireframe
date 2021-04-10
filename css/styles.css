@@ -42,7 +42,7 @@ nav {
 }
 
 .main_container {
-    padding: 68px 0px;
+    padding: 65px 0px;
     margin: 0px 65px;
 }
 
@@ -90,10 +90,7 @@ hr {
 /* Footer & Links */
 
 footer {
-    position: fixed;
     width: 100%;
-    bottom: 0;
-    left: 0;
     background-color: #393A3E;
 }
 
@@ -117,13 +114,30 @@ footer {
 /* Responsive Columns */
 
 @media(max-width:808px) {
+
+    .categories_container, .main_container {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
     .categories_column {
         display: block;
         width: 100%;
     }
 
-    .nav_column {
-        font-size: 9px;
+    .sub_content {
+        margin: 0;
+    }
+
+    footer {
+        margin-top: 25px;
+    }
+
+    ul {
+        display: table;
+        margin: 0 auto;
+        padding: 0;
     }
 }
 
