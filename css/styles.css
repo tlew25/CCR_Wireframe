@@ -90,6 +90,10 @@ hr {
 /* Footer & Links */
 
 footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
     background-color: #393A3E;
 }
 
@@ -116,6 +120,10 @@ footer {
     .categories_column {
         display: block;
         width: 100%;
+    }
+
+    .nav_column {
+        font-size: 9px;
     }
 }
 
