@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CCR Task</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <nav>
@@ -16,7 +17,7 @@
           </div>
           <div class="nav_column">
             <ul>
-              <li><a href="http://">Home</a></li>
+              <li class="change_bgcolor"><a>Home</a></li>
               <li><a href="http://">About</a></li>
               <li><a href="http://">Stuff</a></li>
               <li><input type="text" placeholder="enter search item" name="" id=""></li>
@@ -198,5 +199,12 @@
         </div>
       </footer>
     </div>
+    <script>
+        $(function() {
+            $('.change_bgcolor').click(function(){
+                $('body').toggleClass('color_it');
+            });
+        });
+    </script>
   </body>
 </html>
