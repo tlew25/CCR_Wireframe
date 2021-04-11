@@ -1,3 +1,19 @@
+/* Webpage Configuration */
+
+html,
+body {
+ height: 100%;
+ position: relative;
+}
+
+.page_container {
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 20px;
+}
+
 /* Navigation & Links */
 
 nav {
@@ -7,7 +23,7 @@ nav {
 
 .nav_container {
     padding: 0;
-    margin: 0px 55px;
+    margin: 0px 155px;
 }
 
 .nav_columns {
@@ -22,7 +38,7 @@ nav {
 }
 
 .nav_column a, h1 {
-    text-align: center;
+    text-align: left;
     font-family: Verdana, sans-serif;
     text-decoration: none;
     color: #fff;
@@ -68,6 +84,7 @@ nav {
 
 .categories_column {
     display: table-cell;
+    vertical-align: middle;
     width: 25%;
 }
 
@@ -91,6 +108,9 @@ hr {
 /* Footer & Links */
 
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     width: 100%;
     background-color: #393A3E;
 }
@@ -118,13 +138,17 @@ footer {
 @media(max-width:808px) {
 
     nav {
-        font-size: 12px;
+        font-size: .9em;
     }
 
-    .categories_container, .main_container {
-        padding: 0;
+    .categories_container, .main_container, .nav_container {
+        padding: 0px;
         margin: 0;
         text-align: center;
+    }
+
+    .nav_container h1 {
+        margin-left: 16px;
     }
 
     .categories_column {
